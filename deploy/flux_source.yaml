@@ -2,7 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: k8snginxapp
+  name: fluxcd-nginx-deploy
   namespace: fluxcd-test
 spec:
   interval: 1m0s
