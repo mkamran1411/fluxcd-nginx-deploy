@@ -5,7 +5,7 @@ metadata:
   name: fluxcd-nginx-deploy
   namespace: fluxcd-test
 spec:
-  interval: 1m0s
+  interval: 30s
   ref: 
     branch: main
   url: https://github.com/mkamran1411/fluxcd-nginx-deploy.git
