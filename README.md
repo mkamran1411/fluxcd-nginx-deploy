@@ -42,11 +42,11 @@ flux create source git k8s_nginxapp_sot \
 
 # First create a secret file with base64 encoded secrets
 
-  echo -n "token/password" |  base64
+ echo -n "token/password" |  base64
 
  # Create Sealed secret manifest file
  
- kubeseal --controller-name=sealed-secrets-controller --controller-namespace=kube-system  -n fluxcdtutorial --format yaml < secret.yaml > sealedSecret.yaml
+ kubeseal --controller-name=sealed-secrets-controller --controller-namespace=kube-system  -n fluxcd-test --format yaml < secret.yaml > sealedSecret.yaml
 
  # Locally decrypt existing sealed secrete using deployed controller in k8s environment
 
