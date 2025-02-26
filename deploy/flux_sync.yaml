@@ -7,7 +7,7 @@ spec:
   interval: 30s
   path: ./deploy
   prune: true
-  wait: true
+#  wait: true
   sourceRef:
     kind: GitRepository
     name: fluxcd-nginx-deploy
