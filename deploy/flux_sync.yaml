@@ -2,8 +2,8 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: fluxcd-nginx-deploy
-  namespace: nginx-app
+  name: nginxappkust
+  namespace: flux-system
 spec:
   interval: 30s
   path: ./deploy

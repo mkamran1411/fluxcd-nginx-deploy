@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: fluxcd-nginx-deploy
-  namespace: nginx-app
+  namespace: flux-system
 spec:
   interval: 30s
   ref:
