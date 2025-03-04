@@ -1,10 +1,11 @@
-apiVersion: notification.toolkit.fluxcd.io/v1
-kind: Provider
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
 metadata:
-  name: fluxgithubprovider
-  namespace: flux-system
+  name: fluxcd-nginx-deploy
+  namespace: nginx-deploy
 spec:
-  type: github
-  address: https://github.com/mkamran1411/fluxcd-nginx-deploy.git
-  secretRef:
-    name: github
+  interval: 30s
+  ref: 
+    branch: main
+  url: https://github.com/mkamran1411/fluxcd-nginx-deploy.git

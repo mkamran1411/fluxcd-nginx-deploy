@@ -3,9 +3,9 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: fluxcd-nginx-deploy
-  namespace: flux-system
+  namespace: nginx-deploy
 spec:
   interval: 30s
-  ref:
+  ref: 
     branch: main
   url: https://github.com/mkamran1411/fluxcd-nginx-deploy.git
